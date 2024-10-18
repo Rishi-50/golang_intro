@@ -27,12 +27,32 @@ func main()  {
 	// fmt.Println(name,empid,age,isDeveloper)
 
 
-	var(
-		fname,lname string
-		age int 
-		salary float64
-		isDeveloper bool
+	// var(
+	// 	fname,lname string
+	// 	age int 
+	// 	salary float64
+	// 	isDeveloper bool
+	// )
+
+	// fmt.Printf("First Name: %s, Last Name: %s, Age: %d, Salary:%f, Is Developer: %t\n" , fname, lname, age,salary,isDeveloper)
+
+
+	// Untyped Constant
+	const myFavLanguage = "Python"
+	const sunRisesInTheEast = true
+
+	// Multiple declaration
+	const country, code = "India", 91
+
+	const (
+		employeeId string  = "E101"
+		salary     float64 = 50000.0
 	)
 
-	fmt.Printf("First Name: %s, Last Name: %s, Age: %d, Salary:%f, Is Developer: %t\n" , fname, lname, age,salary,isDeveloper)
+	// Typed Constant
+	const typedInt int = 1234
+	const typedStr string = "Hi"
+
+	fmt.Println(myFavLanguage, sunRisesInTheEast, country, code, employeeId, salary, typedInt, typedStr)
+
 }
